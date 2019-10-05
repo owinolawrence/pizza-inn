@@ -15,20 +15,156 @@
 </head>
 
 <body>
+    <nav>
+        <ul>
+            <li><a href="#home.html">Home</a></li>
+            <li><a href="#services.html">Services</a></li>
+            <li><a href="#about.html">About</a></li>
+        </ul>
+
+    </nav><br><br>
     <div id="home">
-
-        <marquee>
-            <h>Never Miss a Pizzaa!!!</h>
-        </marquee>
-        <strong>
-            <h1>Pizza Inn</h1>
-        </strong>
-
         <div class="container fluid">
-            <div class="card">
-            </div>
+            <marquee>
+                <h>WELCOME</h>
+            </marquee>
+            <strong>
+                <h1> Deluxe Pizza Inn</h1>
+            </strong>
+
         </div>
     </div>
+    <div class="jumbotron">
+        <div class="deal">
+            <h2>Pizza Deal</h2><br>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="https://cdn.pixabay.com/photo/2017/12/05/20/08/pizza-3000273__340.jpg">
+                    <div class="caption">
+                        <p>Caucasian Cuisine Ksh300</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="slides">
+
+                        <img class="mySlides"
+                            src="https://cdn.pixabay.com/photo/2015/12/07/22/27/pizza-1081534__340.jpg">
+
+
+                        <img class="mySlides"
+                            src="https://cdn.pixabay.com/photo/2017/01/22/19/12/pizza-2000595__340.jpg">
+
+                        <img class="mySlides"
+                            src="https://cdn.pixabay.com/photo/2014/05/18/11/25/pizza-346985_960_720.jpg">
+                        <div class="caption">
+                            <p>Pizza Cheese Ksh150</p>
+                        </div>
+                    </div>
+
+                    <script>
+                        var myIndex = 0;
+                        carousel();
+
+                        function carousel() {
+                            var i;
+                            var x = document.getElementsByClassName("mySlides");
+                            for (i = 0; i < x.length; i++) {
+                                x[i].style.display = "none";
+                            }
+                            myIndex++;
+                            if (myIndex > x.length) { myIndex = 1 }
+                            x[myIndex - 1].style.display = "block";
+                            setTimeout(carousel, 1000);
+                        }
+                    </script>
+                </div>
+                <div class="col-md-4">
+                    <img src="https://cdn.pixabay.com/photo/2017/12/05/20/08/pizza-3000273__340.jpg">
+                    <div class="caption">
+                        <p>Pepperoni Pizza  Ksh200</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="order">
+            <h3>Everything you need, delivered now
+            </h3>
+            <p>Order Now</p>
+
+
+        </div><br><br>
+        <div class="container">
+            <div class="row">
+                <form id="form">
+                    <div class="coln-md-6">
+
+                        <div class="form-group"> 
+                            <label for="SizeFormControlSelect">Pizza per size select</label>
+                            <select class="form-control" id="size">
+                                <option id="chosesize">Choose size</option>
+                                <option id="small">small... =Ksh150</option>
+                                <option id="medium">medium... =Ksh200</option>
+                                <option id="large">large... =Ksh 300</option>
+
+                            </select>
+                        
+                         <!-- <div class="form-group">  -->
+                            <label for="CrustFormControlSelect">Crust type select</label>
+                            <select class="form-control" id="Crust">
+                                <option>Choose crust</option>
+                                <option>Crispy ...=Ksh100</option>
+                                <option>Stuffed...=Ksh100</option>
+                                <option>Gluten-free....=Ksh100</option>
+
+                            </select>
+                            
+                        
+                         <!-- <div class="form-group">  -->
+                            <label for="ToppingsFormControlSelect">Toppings type select</label>
+                            <select class="form-control" id="Crust">
+                                <option>Choose Toppings</option>
+                                <option>Bacon=Ksh100</option>
+                                <option>Sausageon=Ksh100</option>
+                                <option>Pepperroni=Ksh100</option>
+
+                            </select>
+                            <br><br>
+                            <button>Order Now</button>
+                        </div>
+                    </div>
+                </form>
+
+
+                <div class="col-md-6">
+
+                    <table>
+
+                        <tr>
+                          <div class="th"><th>Current Order</th>
+                          </tr></div>  
+                        <tr>
+                            <td>Total</td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    <div class="col-md-12">
+        <h4>Deluxe Food for Corporate</h4>
+        <p>Order breakfast, lunch and supper for late-night deliveries to the <br> office or home. Your
+            favorite
+            vendors coming to a desk near you.<br>Thnak you for chosing us.</p>
+    </div>
+    </div>
+    </div>
+    </div>
+
 </body>
 
 </html>
