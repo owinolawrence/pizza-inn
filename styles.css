@@ -1,39 +1,4 @@
-nav{
-    padding: 2px;
-    float: right;
-    clear: left;
-    position: sticky;
-    padding: 14px 16px;
-   
-  
-} 
 
-ul {
-    list-style-type: none;
-    padding: 0;display: inline-block;
-   
-}
-li{
-    display: inline;
-
-
-}
-li a {
-
-        width: 100px;
-          color:black;
-          padding: 8px 8px;
-          text-decoration: none;
-          text-transform:uppercase;
-          font-size: 150%; 
-         
-        }
-
- li a:hover {
-        background-color: #555;
-        color:blue;
-        margin-left:2px;
-        border:3px solid whitesmoke;}
   
    #home{
  background-image: url(https://cdn.pixabay.com/photo/2010/12/13/10/18/background-2621_960_720.jpg)  ;
