@@ -1,10 +1,12 @@
-// $(document).ready(function(){
-// var size= $("#size").find(":selected").text();
-// $(button).click(function(){
-// $ ("button").show('#crust') 
-// });
-// }
-function get_amount(){
-var x = document.getElementById("Select").selectedIndex;
-alert(x);
-}
+(document).ready(function () {
+    $("#submit").submit(function (event) {
+      var yes = $("input:first").val();
+      var no = $("input#email").val();
+      if (yes != '') {
+        prompt("Type you location");
+      } else {
+        alert("Thank you for chosing us.");
+      }
+      event.preventDefault();
+    })
+  });
