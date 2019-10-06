@@ -16,7 +16,7 @@ If delivery	user enters name and location	displays checkout button for order sum
 
 Step 1: Clone this repo: git clone
 Step 2: The repo comes in a zipped or compressed format. Extract to your prefered location and open it.
-Step 3: open your terminal and navigate to MOREO RESTAURANT.
+Step 3: open your terminal and navigate to PIZZA INN.
 Step 4: To run the website, you'll have to open the index.thml file with a browser of your choice.
 
 ## Known Bugs
