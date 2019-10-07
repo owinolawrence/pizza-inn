@@ -11,17 +11,17 @@ Order.prototype.fullOrder = function () {
 }
 $(document).ready(function () {
   $("#myform").submit(
-    function(event){
+    function (event) {
       event.preventDefault();
       var size = $("#size").find(":selected").val();
       var crust = $("#Crust").find(":selected").val();
-      var toppings= $("#toppings").find(":selected").val();
+      var toppings = $("#toppings").find(":selected").val();
       if ((crust === "crispy") && (size === "small") && (toppings === "bacon")) {
         Price = 100;
-        var totalPrice = Price * quantity ;
+        var totalPrice = Price * quantity;
       } else if ((crust === "crispy") && (size === "medium")) {
         Price = 100;
-        var totalPrice = Price * quantity ;
+        var totalPrice = Price * quantity;
       } else if ((crust === "crispy") && (size === "large")) {
         Price = 100;
         var totalPrice = Price * quantity;
@@ -69,30 +69,30 @@ $(document).ready(function () {
       else if ((toppings === 'Pepperroni') && (size === 'small')) {
         Price = 600;
         var totalPrice = Price * quantity;
-      } else if (( toppings=== 'Pepperroni') && (size === 'medium')) {
+      } else if ((toppings === 'Pepperroni') && (size === 'medium')) {
         Price = 900;
         var totalPrice = Price * quantity;
       } else if ((toppings === 'Pepperroni') && (size === 'large')) {
         Price = 1200;
         var totalPrice = Price * quantity;
-  
+
       }
       else {
         alert("Fill in all form fields.")
       }
-      var totalPizza = new Order(pizza, size, crust, toppings, quantity,delivery);
-  
+      var totalPizza = new Order(pizza, size, crust, toppings, quantity, delivery);
+
       $("#display").text(totalPizza.Order() + "and the total price is " + totalPrice);
-  
+
     }
   );
-    
-   $("#yes").click(function () {
-   var location = prompt("Enter your location delivery");
+
+  $("#yes").click(function () {
+    var location = prompt("Enter your location delivery");
     if (location !== "") {
-      alert('Your pizza will be delivered after 30mins  at '  + location + '. Thank you very much.');
+      alert('Your pizza will be delivered after 30mins  at ' + location + '. Thank you very much.');
     } else {
       alert('Thank you very much');
     }
- });
+  });
 });
