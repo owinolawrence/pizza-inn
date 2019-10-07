@@ -1,8 +1,8 @@
-#PIZZA IN
+#PIZZA INN
 
-#
+
 #### Brief description of applicationor, 28/09/2019
-
+Project about Pizza delivery restaurant whereby it enables you to pick out different toppings, crust and size and it gives you an option of pickup or delivery. 
 #### By **{Owino Lawrence Odhiambo
 }
 
@@ -12,7 +12,7 @@ Page loads	User enters information in a form	displays checkout button for order 
 If Pickup click checkout button	displays total order summary.
 If delivery	user enters name and location	displays checkout button for order summary.
 ## Installation
-*** To view the app.Visit ->
+*** To view the app.Visit ->(https://owinolawrence.github.io/pizza-inn/)
 
 Step 1: Clone this repo: git clone
 Step 2: The repo comes in a zipped or compressed format. Extract to your prefered location and open it.
