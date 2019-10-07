@@ -77,22 +77,22 @@ $(document).ready(function () {
         var totalPrice = Price * quantity;
   
       }
-//       else {
-//         alert("Fill in all form fields.")
-//       }
-//       var totalPizza = new Order(pizza, size, crust, toppings, quantity,delivery);
+      else {
+        alert("Fill in all form fields.")
+      }
+      var totalPizza = new Order(pizza, size, crust, toppings, quantity,delivery);
   
-//       $("#display").text(totalPizza.Order() + "and the total price is " + totalPrice);
+      $("#display").text(totalPizza.Order() + "and the total price is " + totalPrice);
   
-//     }
-//   );
+    }
+  );
     
-//    $("#yes").click(function () {
-//    var location = prompt("Enter your location delivery");
-//     if (location !== "") {
-//       alert('Your pizza will be delivered after 30mins  at '  + location + '. Thank you very much.');
-//     } else {
-//       alert('Thank you very much');
-//     }
-//  });
+   $("#yes").click(function () {
+   var location = prompt("Enter your location delivery");
+    if (location !== "") {
+      alert('Your pizza will be delivered after 30mins  at '  + location + '. Thank you very much.');
+    } else {
+      alert('Thank you very much');
+    }
+ });
 });
