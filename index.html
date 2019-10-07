@@ -87,36 +87,36 @@
         </div><br><br>
         <!-- <div class="container"> -->
         <div class="row">
-            <form id="form" id="order now">
+            <form id="myform" id="ordernow">
                 <div class="coln-md-6">
                    
                     <div class="form-group">
                         <label for="SizeFormControlSelect">Pizza per size select</label>
                         <select class="form-control" id="size">
                             <option id="chosesize">Choose size</option>
-                            <option id="small">small... =Ksh150</option>
-                            <option id="medium">medium... =Ksh200</option>
-                            <option id="large">large... =Ksh 300</option>
+                            <option id="small" value="small">small... =Ksh150</option>
+                            <option id="medium" value="medium">medium... =Ksh200</option>
+                            <option id="large" value="large">large... =Ksh 300</option>
 
                         </select>
                         <!-- <div class="form-group">  -->
                         <label for="CrustFormControlSelect">Crust type select</label>
                         <select class="form-control" id="Crust">
                             <option>Choose crust</option>
-                            <option>Crispy ...=Ksh100</option>
-                            <option>Stuffed...=Ksh100</option>
-                            <option>Gluten-free....=Ksh100</option>
+                            <option value="crispy">Crispy ...=Ksh100</option>
+                            <option  value="stuffed">Stuffed...=Ksh100</option>
+                            <option value="gluten">Gluten-free....=Ksh100</option>
 
                         </select>
 
 
                         <!-- <div class="form-group">  -->
                         <label for="ToppingsFormControlSelect">Toppings type select</label>
-                        <select class="form-control" id="Crust">
+                        <select class="form-control" id="toppings">
                             <option>Choose Toppings</option>
-                            <option>Bacon=...Ksh100</option>
-                            <option>Sausageon=...Ksh100</option>
-                            <option>Pepperroni=...Ksh100</option>
+                            <option value="bacon">Bacon=...Ksh100</option>
+                            <option value="sausageon">Sausageon=...Ksh100</option>
+                            <option value="pepperroni">Pepperroni=...Ksh100</option>
 
                         </select>
 
@@ -214,17 +214,7 @@
     </div>
     </div>
     
-    <form>
-        <label class="container">Yes
-          <input type="radio" name="radio" id="yes">
-          <span class="checkmark"></span>
-        </label>
-        <label class="container">No
-          <input type="radio" name="radio" id="no">
-          <span class="checkmark"></span>
-        </label>
-      </form>
-      <button type="submit" id="yesno">Deliver</button>
+    
 </body>
 
 </html>
