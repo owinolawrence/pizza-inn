@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="./css/bootstrap-4.3.1-dist/css/bootstrap.css" type="text/css" rel="stylesheet">
+    <link href="./styles.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymou"></script>
+    <title>Pizza Spun </title>
+
+</head>
+
+<body>
+
+    <div id="home">
+        <div class="container fluid">
+
+            <h>WELCOME</h>
+
+            <strong>
+                <h1> Deluxe Pizza Inn</h1>
+            </strong>
+
+        </div>
+    </div>
+    <div class="jumbotron">
+        <div class="deal">
+            <h2>Pizza Deal</h2><br>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="https://cdn.pixabay.com/photo/2017/12/05/20/08/pizza-3000273__340.jpg">
+                    <div class="caption">
+                        <p>Caucasian Cuisine Ksh300</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="slides">
+
+                        <img class="mySlides"
+                            src="https://cdn.pixabay.com/photo/2015/12/07/22/27/pizza-1081534__340.jpg">
+
+
+                        <img class="mySlides"
+                            src="https://cdn.pixabay.com/photo/2017/01/22/19/12/pizza-2000595__340.jpg">
+
+                        <img class="mySlides"
+                            src="https://cdn.pixabay.com/photo/2014/05/18/11/25/pizza-346985_960_720.jpg">
+                        <div class="caption">
+                            <p>Pizza Cheese Ksh150</p>
+                        </div>
+                    </div>
+
+                    <script>
+                        var myIndex = 0;
+                        carousel();
+
+                        function carousel() {
+                            var i;
+                            var x = document.getElementsByClassName("mySlides");
+                            for (i = 0; i < x.length; i++) {
+                                x[i].style.display = "none";
+                            }
+                            myIndex++;
+                            if (myIndex > x.length) { myIndex = 1 }
+                            x[myIndex - 1].style.display = "block";
+                            setTimeout(carousel, 1000);
+                        }
+                    </script>
+                </div>
+                <div class="col-md-4">
+                    <img src="https://cdn.pixabay.com/photo/2017/12/05/20/08/pizza-3000273__340.jpg">
+                    <div class="caption">
+                        <p>Pepperoni Pizza Ksh200</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="order">
+            <h3>Everything you need, delivered now
+            </h3>
+            <p>Order Now</p>
+        </div><br><br>
+        <!-- <div class="container"> -->
+        <div class="row">
+            <form id="myform" id="ordernow">
+                <div class="coln-md-6">
+                   
+                    <div class="form-group">
+                        <label for="SizeFormControlSelect">Pizza per size select</label>
+                        <select class="form-control" id="size">
+                            <option id="chosesize">Choose size</option>
+                            <option id="small" value="small">small... =Ksh150</option>
+                            <option id="medium" value="medium">medium... =Ksh200</option>
+                            <option id="large" value="large">large... =Ksh 300</option>
+
+                        </select>
+                        <!-- <div class="form-group">  -->
+                        <label for="CrustFormControlSelect">Crust type select</label>
+                        <select class="form-control" id="Crust">
+                            <option>Choose crust</option>
+                            <option value="crispy">Crispy ...=Ksh100</option>
+                            <option  value="stuffed">Stuffed...=Ksh100</option>
+                            <option value="gluten">Gluten-free....=Ksh100</option>
+
+                        </select>
+
+
+                        <!-- <div class="form-group">  -->
+                        <label for="ToppingsFormControlSelect">Toppings type select</label>
+                        <select class="form-control" id="toppings">
+                            <option>Choose Toppings</option>
+                            <option value="bacon">Bacon=...Ksh100</option>
+                            <option value="sausageon">Sausageon=...Ksh100</option>
+                            <option value="">Pepperroni=...Ksh100</option>
+
+                        </select>
+
+                        <br>
+                        <label class="form-control " style="font-size: 25px;">quantity</label>
+                        <input class="form-contro" type="number" id="number">
+
+                        <button type="submit" class="btn btn-primary">Add</button>
+                    </div>
+                    <div class="button"><button>Order Now</button></div>
+                    <button id="check" type="submit">Checkout</button><br>
+                </div>
+            </form>
+            <div class="col-md-6">
+
+                <table>
+
+                    <tr>
+                        <div class="th">
+                            <th>Current Order</th>
+                    </tr>
+
+                    <tr>
+                        <td>Total</td>
+                    </tr>
+
+                </table>
+            </div>
+
+        </div>
+    </div>
+        <div class="delivery">
+            <div class="form-action">
+
+                <form action="">
+                    <p>Would you like us to deliver to your premises</p>
+                    <div id="delivery"> <label>Delivery</label></div>
+                    <label for="charges" id="charges"> Ksh.300</label><br>
+                    <div id="yes"> <input type="radio" name="delivery" id="yes" value="yes" checked>YES</div>
+                    <input type="radio" name="delivery" id="no" value="no">NO<br>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="col-md-12">
+        <h4>Deluxe Food for Corporate</h4>
+        <p>Order breakfast, lunch and supper for late-night deliveries to the <br> office or home. Your
+            favorite
+            vendors coming to a desk near you.<br>Thnak you for chosing us.</p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="footer">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="caption">
+                    <p>Nairobi Branch
+                        3101 Bardstown Road
+                        Louisville, KY 40205
+                        Local (24) 456.6505
+                        Toll Free 07139334431
+                        Get Directions.
+                    </p> Email ::<strong>owinolawrence21@gmai.com</strong>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="caption">
+                    <p>Ngong Road
+                        2355 Karen Road
+                        Lexington, KY 40504
+                        Local (859) 276.4357
+                        Get Directions from me owino lawrence.
+                    </p>
+                    Email ::<strong>owinolawrence21@gmai.com</strong>
+
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="caption">
+                    <p>Learning Center - Busia
+                        122 South Main Cross St.
+                        Louisa, KY 41230
+                        Toll Free (800) 844.1354
+                        Get Directions.
+                    </p>
+                    Email ::<strong>owinolawrence21@gmai.com</strong>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+    
+      <script src="./script.js"></script>
+</body>
+
+</html>
