@@ -87,9 +87,9 @@
         </div><br><br>
         <!-- <div class="container"> -->
         <div class="row">
-            <form id="form">
+            <form id="form" id="order now">
                 <div class="coln-md-6">
-
+                   
                     <div class="form-group">
                         <label for="SizeFormControlSelect">Pizza per size select</label>
                         <select class="form-control" id="size">
@@ -121,7 +121,7 @@
                         </select>
 
                         <br>
-                        <label class="form-control " style="font-size: 25px;">NUMBER OF PIZZA</label>
+                        <label class="form-control " style="font-size: 25px;">quantity</label>
                         <input class="form-contro" type="number" id="number">
 
                         <button type="submit" class="btn btn-primary">Add</button>
@@ -147,17 +147,17 @@
             </div>
 
         </div>
-
+    </div>
         <div class="delivery">
             <div class="form-action">
 
-                <form action="" class="" id="submit">
+                <form action="">
                     <p>Would you like us to deliver to your premises</p>
                     <div id="delivery"> <label>Delivery</label></div>
                     <label for="charges" id="charges"> Ksh.300</label><br>
                     <div id="yes"> <input type="radio" name="delivery" id="yes" value="yes" checked>YES</div>
                     <input type="radio" name="delivery" id="no" value="no">NO<br>
-                    <div id="submit"><input type="submit" value="Submit"></div>
+                    
                 </form>
             </div>
         </div>
@@ -213,7 +213,18 @@
         </div>
     </div>
     </div>
-
+    
+    <form>
+        <label class="container">Yes
+          <input type="radio" name="radio" id="yes">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">No
+          <input type="radio" name="radio" id="no">
+          <span class="checkmark"></span>
+        </label>
+      </form>
+      <button type="submit" id="yesno">Deliver</button>
 </body>
 
 </html>
